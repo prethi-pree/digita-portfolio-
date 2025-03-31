@@ -1,0 +1,166 @@
+/* Reset and Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.5s ease;
+}
+
+/* Style the body with a moving pattern */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(212, 50, 215);
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+    background-size: 30px 30px;
+    animation: movePattern 10s linear infinite;
+}
+
+@keyframes movePattern {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100px 100px;
+    }
+}
+
+/* Style the header with a moving wave pattern */
+header {
+    background-color: rgb(164, 10, 10);
+    color: #ffffff;
+    text-align: center;
+    line-height: 250%;
+    padding: 40px;
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+    animation: moveHeaderPattern 20s linear infinite;
+}
+
+@keyframes moveHeaderPattern {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 200px 200px;
+    }
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+}
+
+.picture-content {
+    max-width: 125px;
+    max-height: 125px;
+    border-radius: 25%;
+    object-fit: cover;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+}
+
+header h1 {
+    font-size: 40px;
+    position: relative;
+}
+
+h4 {
+    line-height: 35px;
+    color: black;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+h2 {
+    line-height: 35px;
+    color: black;
+}
+
+/* Style the navigation menu with gradient */
+nav ul {
+    background: linear-gradient(to right, #060601, #2c2c2c);
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+p {
+    line-height: 35px;
+    color: black;
+    font-style: italic;
+    letter-spacing: 2px;
+    text-indent: 50px;
+    font-size: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e5dbdb;
+}
+
+/* Style the sections with a moving soft pattern */
+section {
+    background-color: #dde7f4;
+    background-image: url('https://www.transparenttextures.com/patterns/white-diamond.png');
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    animation: moveSectionPattern 15s linear infinite;
+}
+
+@keyframes moveSectionPattern {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 150px 150px;
+    }
+}
+
+/* Download Button Style */
+.download-btn {
+    background-color: #140d0d;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.download-btn-hanover {
+    background-color: #555;
+}
+
+/* Style the portfolio project items */
+.project {
+    margin: 20px;
+}
+
+/* Moving background for footer */
+footer {
+    background-color: #4dbce7;
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+    animation: moveFooterPattern 10s linear infinite;
+}
+
+@keyframes moveFooterPattern {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 80px 80px;
+    }
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+}
